@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+      integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Controle de produtos</h1>
+    </header>
+    <main>
+      <h2>Produtos</h2>
+      <span>Lista de produtos</span>
+      <div class="cardi">
+        <div class="inputpd">
+          <label>Nome do produto</label><br />
+          <input type="text" id="pdnome" placeholder="nome do produto" />
+        </div>
+        <div class="inputpd">
+          <label>Preço</label><br />
+          <input type="text" id="pdpreco" placeholder="R$ 00.00" />
+        </div>
+        <div class="edicao">
+          <button id="adicio" onclick="produto.adicionar()">Adicionar</button>
+          <button id="atualiza" onclick="produto.atualizar()">Atualizar</button>
+          <button onclick="produto.Cancelar()">Cancelar</button>
+        </div>
+      </div>
+      <div class="conteudo">
+        <table border="1">
+          <thead>
+            <th>ID</th>
+            <th>Produto</th>
+            <th>preço</th>
+            <th>Remover</th>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
